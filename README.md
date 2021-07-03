@@ -1,6 +1,9 @@
 # E-SportsPlus
 
-Página do projeto de criação de um site de notícias e estatísticas do mundo de E-sports. Foi feito na disciplina de Desenvolvimento de Sistemas Web 1 do curso de Análise e Desenvolvimento de Sistemas do Instituto Federal de Pernambuco (IFPE).
+Página do projeto de criação de um site de notícias e estatísticas do mundo de E-sports. Foi feito na disciplina de Desenvolvimento de Sistemas Web 1 do curso de Análise e Desenvolvimento de Sistemas do Instituto Federal de Pernambuco (IFPE). 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Ifpe_logomarca.png" alt ="logo do IF"></a>
+
 
 * Professor da disciplina: Rodrigo Lira
 
