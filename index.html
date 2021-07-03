@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>E-Sports Plus </title>
     <link rel="sortcut icon" href="/Imagens/logo1.png" type="image/x-icon" />
+
 </head>
 <body>
   <script type="module" src="script1.js"></script>
@@ -21,15 +22,12 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Início</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Bem vindo(a)!</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Mais
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">Sobre mim</a></li>
+              <li><a class="dropdown-item" href="#" onclick="meugithub()">Meu GitHub</a></li>
               <li><hr class="dropdown-divider"> </li> 
             </ul>
           </li>
@@ -37,11 +35,6 @@
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
           <button onclick = "semResultado()"class="btn btn-outline-success" type="submit">Pesquisar</button>
-          <script>
-            function semResultado(){
-              alert('Não há resultado para pesquisa');
-            }
-          </script>
         </form>
       </div>
     </div>
@@ -59,6 +52,8 @@
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Flamengo continua invencível no CBLOL</h5>
                   <p>O Flamengo enfrentou a Rensga em busca de manter a sua sequência de vitórias e continuar isolado na liderança. E apesar da Rensga conseguir uma primeira luta favorável, na rota inferior, saindo com dois abates contra um, o Flamengo devolveu na sequência, com um dive no top, e conseguiu três abates, virando o confronto. Com a vantagem, o Flamengo viu o Ezreal de Luiz Felipe "Flare" crescer e ajudar a equipe a conquistar os dragões e novos abates e, aos 27 minutos, conseguir mais duas eliminações e o ace, que levou o rubro-negro à sexta vitória.</p>
+                  <button type="button" class="btn btn-secondary btn-sm" onclick="redirecionar()">Saber mais</button>
+
                 </div>
               </div>
               <div class="carousel-item">
@@ -66,6 +61,9 @@
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Caso brTT: ação da RED Canids contra Flamengo chega ao STJ</h5>
                   <p>A ação movida pela RED Canids contra o Flamengo, Felipe "brTT" e a Cursor eSports está nas mãos do Supremo Tribunal de Justiça (STJ). O caso foi colocado nas mãos de Humberto Martins, ministro presidente da instituição, em 18 de maio, e ainda não possui decisão — a informação foi divulgada inicialmente pela coluna de Ancelmo Gois. O processo trata sobre a contratação de brTT pelo Flamengo no fim de 2017: a RED alega que, mesmo tendo chegado a um acordo prévio com o Fla, o clube carioca esperou pelo fim do vínculo entre o profissional de League of Legends (LoL) e a Matilha para poder contratá-lo sem custo.</p>
+                  <button type="button" class="btn btn-secondary btn-sm" onclick="redirecionarpag1()">Saber mais</button>
+                  <script src="eventos.js"></script>
+
                 </div>
               </div>
               <div class="carousel-item">
@@ -75,7 +73,10 @@
                   <p>A Netshoes Miners finalmente saiu do zero no 2º split do CBLOL 2021: a equipe conseguiu sua primeira vitória em jogo contra a KaBuM, triunfando depois de seis derrotas consecutivas. Apesar do resultado positivo, a Miners segue na lanterna e terá a vice-líder paiN pela frente no domingo (27). Por enquanto, o Atirador Matheus "Drop" vai aproveitar o alívio que sentiu após a vitória:
 
                     — Finalmente, pela primeira vitória, vou conseguir dormir bem em uma noite. Eu sinto essa obrigação [de carregar os jogos] porque, desde que eu entrei, o time começou a rodar, de certa forma. No split passado, a gente conseguiu vitórias assim que eu entrei, mas nesse split demorou pra gente conseguir — disse o jogador da Miners em entrevista pós-jogo.</p>
-                </div>
+                
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="redirecionarpag2()">Saber mais</button>
+
+                  </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -105,7 +106,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Você sente falta das finais nos estádios? A gente também</h5>
                   <p class="card-text">As finais do grande campeonato brasileiro de league of legends movimentaram muito o cenário antes da pandemia, com o ritmo da situação pandêmica e a vacinação você palpitaria quando voltará os jogos em estádios? Então...</p>
-                  <a href="#" class="btn btn-primary ">Leia mais</a> 
+                  <button onclick = "cblol()"href="#" class="btn btn-primary ">Leia mais</button> 
                 </div>
               </div>
         </div>
@@ -115,16 +116,11 @@
                 <div class="card-body">
                   <h5 class="card-title">Por que a riot insiste tanto em nerfar Akali? </h5>
                   <p class="card-text"> Recentemente um Rioter "Jeevun Sidhu" divulgou no seu instagram algumas mudanças para a atualização 11.14 do league of legends e adivinha? Isso mesmo nerf na Akali. Aparentemente uma das suas maiores forças que é utilizar o E duas vezes ao acertar e chegar no inimigo será retirado...</p>
-                  <button onclick = "minhaFuncao()"href="#" class="btn btn-primary">Leia mais</button>
-                <script>
-                  function minhaFuncao(){
-                    alert('O texto não está disponível.');
-                  }
-                </script>
+                  <button onclick = "noticianerf()"href="#" class="btn btn-primary">Leia mais</button>
                 </div>
               </div>
-    </div>
-    </div>
+          </div>
+         </div>
     </section>
   <table class="table">
     <thead>
@@ -135,42 +131,23 @@
       </tr>
     </thead>
 
-      <select onchange="funcaoOption(this.value)">
-        
-    <option value="PaiN com 6 Pontos"> PaiN Gaming </option>
-    <option value="Flamengo Invicto com 8 Pontos"> Flamengo </option>
-    <option value="VORAX com 6 Pontos"> VORAX </option>
+      <select id ="times" onchange="funcaoOption(this.value)">
+      <option value="PaiN com 6 Pontos"> PaiN Gaming </option>
+      <option value="Flamengo Invicto com 8 Pontos"> Flamengo </option>
+      <option value="VORAX com 6 Pontos"> VORAX </option>
       <option value="Kabum com 4 Pontos"> KABUM </option>
-        <option value=" INTZ com 2 Pontos"> INTZ </option>
-         <option value=" LOUD com 4 Pontos"> LOUD </option>
-          <option value=" Red com 4 Pontos"> Red Canids</option>
-          <option value=" Rensga com 3 Pontos"> Rensga </option>
-          <option value=" FURIA com 2 Pontos"> FURIA </option>
-           <option value=" Miners com 1 Ponto"> NetShoes Miners </option>
-      
+      <option value=" INTZ com 2 Pontos"> INTZ </option>
+      <option value=" LOUD com 4 Pontos"> LOUD </option>
+      <option value=" Red com 4 Pontos"> Red Canids</option>
+      <option value=" Rensga com 3 Pontos"> Rensga </option>
+      <option value=" FURIA com 2 Pontos"> FURIA </option>
+      <option value=" Miners com 1 Ponto"> NetShoes Miners </option>
       </select>
 
-      <script>
-      
-        function funcaoOption(pontos){
-          alert(pontos)
-        }
-      
-      </script>
-
-
-      <input type="text" placeholder="Digite um time" id="pontos">
-      <button onclick="pontos()">Clique aqui!</button>
-
-      <div id="pontos"></div>
-      <script>
-
-        function pontos(){
-          var pontos = document.getElementById('pontos').value;
-          document.getElementById('pontos').innerHTML = pontos;
-        }
-
-      </script>
+      <form id="tfnewsearch">
+      <input type="text" placeholder="Digite um time aqui" class="tftextinput" name="q" size="21" maxlength="120">
+      <button onclick="pesquisarGoogle()" id="pesquisar-google" formaction="https://www.google.com/search?q=">Buscar</button>
+    </form>
 
     <tbody>
       <tr>
