@@ -2,7 +2,7 @@
 
 Página do projeto de criação de um site de notícias e estatísticas do mundo de E-sports. Foi feito na disciplina de Desenvolvimento de Sistemas Web 1 do curso de Análise e Desenvolvimento de Sistemas do Instituto Federal de Pernambuco (IFPE). 
 
-<img src="![logo2](https://user-images.githubusercontent.com/57967369/124367342-b3507b80-dc2c-11eb-95d3-597f92a8057e.jpg)" alt ="logo do IF"></a>
+<img src="https://user-images.githubusercontent.com/57967369/124367342-b3507b80-dc2c-11eb-95d3-597f92a8057e.jpg" alt ="logo do IF"></a>
 
 
 * Professor da disciplina: Rodrigo Lira
